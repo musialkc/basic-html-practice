@@ -4,44 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ken-mockup-3</title>
+    <style>
+        #centertitle {
+            text-align: center;
+        }
+        #centernav {
+            text-align: center;
+        }
+        table.left {
+            float: left;
+            margin-left: 25%;
+            margin-right: auto;
+            position: relative;
+            border-collapse: collapse;
+            border: solid 1px black
+        }
+        table.right {
+            float: right;
+            margin-left: auto;
+            margin-right: 25%;
+            position: relative;
+            border-collapse: collapse;
+            border: solid 1px black
+        }
+        table.center {
+            margin-left: 40%;
+            margin-right: auto;
+            position:absolute;
+            bottom:30%;
+            border-collapse: collapse;
+            border: solid 1px black
+        }
+
+        footer.bottom {
+            position:absolute;
+            bottom:0;
+            background-color: #c1c1c1;
+            display:block;
+            width:100%;
+            text-align:right
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <section>
-          <form>
-            <fieldset style="background-color: #c1c1c1;">
-                <center>My Webpage</center>
-              <a href="./final.html">
-                <img src="./img/left.png" alt="Back Button" width="60"/>
-              </a>
-              <a href="./final.html">
-                <img src="./img/right.png" alt="Forward Button" width="60"/>
-              </a>
-              <a href="./final.html">
-                <img src="./img/cancel.png" alt="Cancel Button" width="60"/>
-              </a>
-              <a href="./final.html">
-                <img src="./img/house.png" alt="Forward Button" width="60"/>
-              </a>
-              <input type="text" id="inputbox" name="input" size="50">
-              <a href="./final.html">
-                <img src="img/searchIcon.png" alt="Search Button" width="60">
-              </a>
-            </fieldset>
-          </form>
-        </section>
-    </header>
-        <section>
-          <fieldset>
-            <h1>Details:</h1>
-            
-          </fieldset>
-        </section>
-    <footer>
-      <section>
-        <fieldset style="background-color: #c1c1c1;">
-        </fieldset>
-      </section>
-  </footer>
+<header>
+    <section style="background-color: #c1c1c1;">
+        <form>
+            <div id="centertitle">
+                My Webpage
+            </div>
+            <div id="centernav">
+            <a href="./final.html">
+            <img src="./img/left.png" alt="Back Button" width="60"/>
+            </a>
+            <a href="./final.html">
+            <img src="./img/right.png" alt="Forward Button" width="60"/>
+            </a>
+            <a href="./final.html">
+            <img src="./img/cancel.png" alt="Cancel Button" width="60"/>
+            </a>
+            <a href="./final.html">
+            <img src="./img/house.png" alt="Forward Button" width="60"/>
+            </a>
+            <input type="text" id="inputbox" name="input" size="50">
+            <a href="./final.html">
+            <img src="img/searchIcon.png" alt="Search Button" width="60">
+            </a>
+            </div>
+        </form>
+    </section>
+</header>
+
+
+    <section>
+        <h1>Details:</h1>
+
+        <div>
+            <table class="left">
+                <tr>
+                    <td>Pets:</td>
+                </tr>
+                <tr>
+                    <td>Puppies</td>
+                </tr>
+                <tr>
+                    <td>Cats</td>
+                </tr>
+                <tr>
+                    <td>Kittens</td>
+                </tr>
+                <tr>
+                    <td>Dogs</td>
+                </tr>
+                <tr>
+                    <td>Capybaras</td>
+                </tr>
+                <tr>
+                    <td>Giraffes</td>
+                </tr>
+                </table>
+
+            <table class="right">
+                <tr>
+                    <td>Cities:</td>
+                </tr>
+                <tr>
+                    <td>San Francisco</td>
+                </tr>
+                <tr>
+                    <td>New York</td>
+                </tr>
+                <tr>
+                    <td>San Jose</td>
+                </tr>
+                <tr>
+                    <td>Patterson</td>
+                </tr>
+                <tr>
+                    <td>Los Angeles</td>
+                </tr>
+                <tr>
+                    <td>Palo Alto</td>
+                </tr>
+                <tr>
+                    <td>Sausalito</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+<br>
+
+            <section>
+                <div>
+                    <table class="center">
+                        <tr>
+                            <td>
+                                <a href="./final.html"> View Additional Details </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+<footer class="bottom">
+    <a>a</a>
+</footer>
 </body>
 </html>
