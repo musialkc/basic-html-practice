@@ -12,10 +12,27 @@
             text-align: center;
         }
         #h1align {
-            margin-left: 10%
+            margin-left: 10%;
         }
-        table.align {
-            margin-left: 10%
+        table {
+            margin-left: 10%;
+            width: 80%;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+        th {
+            background-color: gray;
+            text-align: left;
+        }
+        td {
+            height:22px;
+        }
+        tr:nth-child(odd) {
+            background-color: #c1c1c180;
         }
         footer.bottom {
             position:absolute;
@@ -60,49 +77,56 @@
 </header>
     <section>
         <h1 id="h1align">My Awesome Table</h1>
-
-           
-                <table class="align">
-                    <thead>
-                        <td>Firstname</td>
-                        <td>Lastname</td>
-                        <td>Petname</td>
-                        <td>City</td>
-                    </thead>
-                    <tr>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>Fifi</td>
-                        <td>Denver</td>
-                    </tr>
-                    <tr>
-                        <td>Jane</td>
-                        <td>Doe</td>
-                        <td>Fido</td>
-                        <td>Sante Fe</td>
-                    </tr>
-                    <tr>
-                        <td>Jennifer</td>
-                        <td>Smith</td>
-                        <td>Pikachu</td>
-                        <td>Los Angeles</td>
-                    </tr>
-                    <tr>
-                        <td>Stephen</td>
-                        <td>Hawking</td>
-                        <td>Furby</td>
-                        <td>New York</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                    </tr>
-                    </table>
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Petname</th>
+                <th>City</th>    
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>Fifi</td>
+                <td>Denver</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>Fido</td>
+                <td>Sante Fe</td>
+            </tr>
+            <tr>
+                <td>Jennifer</td>
+                <td>Smith</td>
+                <td>Pikachu</td>
+                <td>Los Angeles</td>
+            </tr>
+            <tr>
+                <td>Stephen</td>
+                <td>Hawking</td>
+                <td>Furby</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+        </table>
     </section>
 <br>          
 <footer class="bottom">
